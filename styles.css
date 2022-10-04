@@ -1,0 +1,52 @@
+.box1{
+    min-width: 400px;
+    min-height: 200px;
+    max-width: 60%;
+    background-color: lightblue;
+    margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+}
+
+.box2{
+    min-width: 400px;
+    min-height: 200px;
+    max-width: 60%;
+    background-color: lightgreen;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pending-title{
+    min-width: 80px;
+    min-height:30px;
+    display:flex;
+    align-self: flex-start;
+    background-color: rgb(120, 197, 223);
+    padding: 5px;
+}
+
+.completed-title{
+    min-width: 80px;
+    min-height:30px;
+    display:flex;
+    align-self: flex-start;
+    background-color: rgb(97, 226, 97);
+    padding: 5px;
+}
+
+
+li {
+    list-style: none
+}
+
+.mainC{
+    display:flex;
+    flex-direction: column;
+}
+
+.my-button{
+    margin: 10px;
+    
+}
