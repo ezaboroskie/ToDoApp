@@ -13,16 +13,25 @@ if(document.getElementById("taskTextBox").value ===""){
 }
 }
 
+document.getElementById("taskTextBox")
+    .addEventListener("keyup", function(event){
+        event.preventDefault();
+        if (event.key === 'Enter'){
+            document.getElementById("btnAddTask").click()
+        }
+    })
 
 btnAddTask.addEventListener('click', function(){
     
     
     const todoTitle = taskTextBox.value 
     let li = document.createElement('li')
+    li.classList.add('text-lrg')
     
 
     //Creating checkbox
     let checkBox = document.createElement('input')
+    checkBox.classList.add('check-box')
     checkBox.type ="checkbox"
     li.appendChild(checkBox)
     
@@ -35,7 +44,7 @@ btnAddTask.addEventListener('click', function(){
 
     //Creates the remove button
     let removeButton = document.createElement('button')
-    removeButton.classname= "removeButton"
+    removeButton.classList.add('remove-btn')
     removeButton.setAttribute('class', "btn btn-outline-primary my-button")
     removeButton.addEventListener('click', function() {
         removeButton.parentElement.remove()   
@@ -53,6 +62,8 @@ btnAddTask.addEventListener('click', function(){
     taskPendingBox.appendChild(li)}
     })
 
+    document.getElementById("taskTextBox").value=""
+    
 })
 
 

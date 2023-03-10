@@ -50,3 +50,22 @@ li {
     margin: 10px;
     
 }
+
+.text-box{
+    min-width: 300px;
+    margin-right: 10px;
+}
+
+.text-lrg{
+    font-size: 35px;
+}
+
+.check-box{
+    margin-right: 10px
+}
+
+.text-and-btn-container{
+    display: flex;
+    align-items: center;
+    
+}

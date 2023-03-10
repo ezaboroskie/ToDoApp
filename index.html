@@ -13,11 +13,12 @@
         <h1>Task Manager App</h1>
         <h3></h3>
         <div class="enter-task">
-        <h3>Enter Task:</h3>
+            <h3>Enter Task:</h3>
         </div>
-        <input id="taskTextBox" type = "text" onkeyup="emptyField()">
-        <button id="btnAddTask" class="btn btn-outline-primary" class="my-button" disabled>Add Task</button>
-
+        <div class="text-and-btn-container">
+            <textarea id="taskTextBox" type = "text" type = "reset" onkeyup="emptyField()" class="text-box"></textarea>
+            <button id="btnAddTask" class="btn btn-outline-primary" class="my-button" disabled>Add Task</button>
+        </div>
         <div class = "box1" class="container-fluid">
             <div class ="pending-title">Pending Tasks</div>
             <ul id = "taskPendingBox">
